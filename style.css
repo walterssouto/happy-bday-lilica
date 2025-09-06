@@ -7,6 +7,7 @@ body, html {
 }
 body {
     display:flex;
+    flex-direction: column;
     justify-content:center;
     margin: auto;
 }
@@ -14,4 +15,25 @@ body {
     width: 100%;
     height: 100%;
 
+}
+.lili {
+    width: fit-content;
+    margin: auto;
+    position: absolute;
+    left: 44%;
+    top: 85%;
+    font-weight: 900;
+    font-size: 2rem;
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    /* Animação em loop */
+    animation: blink-loop 6s linear infinite;
+}
+
+/* Animação do ciclo */
+@keyframes blink-loop {
+    0%, 10%, 20% { opacity: 1; }   /* aparece */
+    5%, 15%       { opacity: 0; }   /* pisca */
+    21%, 100%     { opacity: 0; }   /* some até reiniciar */
 }
